@@ -58,6 +58,15 @@ Android 12以降のシミュレーターや実機で広告IDを正常に読み�
 ### 📄 libs.version.toml
 新規プロジェクトに導入する場合、`coreKtx` のバージョン競合が原因でエラーが発生することがあります。本サンプル（unity-ads:4.12.5）は、**`1.10.1`** で動作確認をしています。
 
+**[場所]** `Gradle Scripts` ＞ `build.gradle.kts(Module :app)`
+
+```toml
+dependencies {
+...(省略)
+implementation("com.unity3d.ads:unity-ads:4.12.5") 
+...(省略)
+}
+
 **[場所]** `Gradle Scripts` ＞ `libs.version.toml`
 
 ```toml
